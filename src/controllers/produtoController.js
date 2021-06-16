@@ -17,6 +17,7 @@ exports.Insert = (req, res, next) => {
         descricao: descricao,
         preco: preco,
         quantidadeestoque: quantidadeestoque,
+        ativo: ativo,
     })
         //then = registra o que queremos que aconteca quando a Promise for resolvida
         .then(produto => {
@@ -60,6 +61,7 @@ exports.Update = (req, res, next) => {
     const descricao = req.body.descricao;
     const preco = req.body.preco;
     const quantidadeestoque = req.body.quantidadeestoque;
+    const ativo = req.body.ativo;
  
     Produto.findByPk(id)
         .then(produto => {

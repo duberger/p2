@@ -35,6 +35,7 @@ const Cliente = sequelize.define("produto", {
         type: Sequelize.INTEGER()
        
     }
+    
 });
  
 module.exports = Cliente;
