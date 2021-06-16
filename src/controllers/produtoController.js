@@ -17,7 +17,6 @@ exports.Insert = (req, res, next) => {
         descricao: descricao,
         preco: preco,
         quantidadeestoque: quantidadeestoque,
-        ativo: ativo,
     })
         //then = registra o que queremos que aconteca quando a Promise for resolvida
         .then(produto => {
